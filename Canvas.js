@@ -16,9 +16,8 @@ let Canvas = new Canvas2D();
 
 //just for testing
 let image = new Image();
-image.src = "./assets/sprites/spr_background.png";
+image.src = "./assets/sprites/spr_background4.png";
 
 setTimeout(() => {
     Canvas.drawImage(image, {x:0, y:0});
 }, 1000);
-
