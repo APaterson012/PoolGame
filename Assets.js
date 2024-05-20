@@ -17,7 +17,7 @@ function loadAssets(callback){
         assetsStillLoading++;
 
         let spriteImage = new Image();
-        spriteImage.src = './assets/sprites/' + fileName
+        spriteImage.src = './assets/sprites/' + fileName;
 
         spriteImage.onload =  function(){
             assetsStillLoading--;
@@ -27,6 +27,7 @@ function loadAssets(callback){
     }
     sprites.background = loadSprite('spr_background4.png');
     sprites.stick = loadSprite('spr_stick.png');
+    sprites.whiteBall = loadSprite('spr_ball2.png');
 
     assetsLoadingLoop(callback)
 }

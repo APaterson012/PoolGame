@@ -1,5 +1,5 @@
 function ButtonState(){
     
-    this.down = flase; 
+    this.down = false;
     this.pressed = false;
 }
