@@ -30,6 +30,10 @@ function loadAssets(callback){
     sprites.whiteBall = loadSprite('spr_ball2.png');
     sprites.redBall = loadSprite('spr_redBall2.png');
     sprites.yellowBall = loadSprite('spr_yellowBall2.png');
+    sprites.blueBall = loadSprite('spr_blueBall2.png');
+    sprites.greenBall = loadSprite('spr_greenBall2.png');
+    sprites.brownBall = loadSprite('spr_brownBall2.png');
+    sprites.pinkBall = loadSprite('spr_pinkBall2.png');
     sprites.blackBall = loadSprite('spr_blackBall2.png');
 
     assetsLoadingLoop(callback)
@@ -47,5 +51,13 @@ function getBallSpriteByColor(color){
             return sprites.blackBall;
         case COLOR.WHITE:
             return sprites.whiteBall;
+        case COLOR.GREEN:
+            return sprites.greenBall;
+        case COLOR.BROWN:
+            return sprites.brownBall;
+        case COLOR.BLUE:
+            return sprites.blueBall;
+        case COLOR.PINK:
+            return sprites.pinkBall;
     }
 }
